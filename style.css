@@ -452,12 +452,76 @@ body {
   margin: 0;
 }
 
-/* Mobile */
-@media (max-width: 480px) {
-  html {
-    font-size: 62.5%;
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 780px) {
+  .container {
+    padding: 0 20px;
   }
 
+  .nav-menu {
+    display: none;
+  }
+
+  .content {
+    display: block;
+  }
+
+  .content-left h1 {
+    width: 100%;
+    font-size: 48px;
+  }
+
+  .content-left p {
+    width: 90%;
+  }
+
+  .content .content-right {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .content .content-right img {
+    width: 80%;
+  }
+
+  .support .container .heading {
+    width: 100%;
+  }
+  .support .container .subheading {
+    width: 80%;
+  }
+  .support .container .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .booking-content {
+    display: block;
+  }
+  .booking-content-left .subheading {
+    width: 75%;
+  }
+  .booking-content-right {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .booking-content-right img {
+    width: 75%;
+  }
+
+  .pricing-content .subheading {
+    width: 75%;
+  }
+  .pricing-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
   .pricing-cards {
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;

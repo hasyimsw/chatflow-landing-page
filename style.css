@@ -469,6 +469,10 @@ body {
   margin: 0;
 }
 
+#hamburger-menu {
+  display: none;
+}
+
 /* Media Queries */
 
 /* Tablet */
@@ -553,6 +557,15 @@ body {
   }
   .contact-links {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+    color: #fff;
   }
 }
 
